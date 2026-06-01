@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingresar Ticket</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="tituloFormulario">Ingresar Ticket</h1>
+
+    <section class="card">
+      <form id="formTicket">
+
+        <div class="grupo">
+          <label for="nombreSolicitante">Nombre solicitante</label>
+          <input type="text" id="nombreSolicitante" name="nombreSolicitante" required>
+        </div>
+
+        <div class="grupo">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <div class="grupo">
+          <label for="categoria">Categoría</label>
+          <input type="text" id="categoria" name="categoria" placeholder="hardware, software, red..." required>
+        </div>
+
+        <div class="grupo">
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" name="descripcion" required></textarea>
+        </div>
+
+        <div class="grupo">
+          <label for="impacto">Impacto</label>
+          <input type="text" id="impacto" name="impacto" placeholder="bajo, medio, alto" required>
+        </div>
+
+        <div class="grupo">
+          <label for="urgencia">Urgencia</label>
+          <input type="text" id="urgencia" name="urgencia" placeholder="baja, media, alta" required>
+        </div>
+
+        <div class="grupo">
+          <label for="tiempoEstimado">Tiempo estimado (horas)</label>
+          <input type="number" id="tiempoEstimado" name="tiempoEstimado" min="0">
+        </div>
+
+        <div class="grupo">
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado" placeholder="pendiente, en proceso, resuelto">
+        </div>
+
+        <div class="grupo">
+          <label for="prioridad">Prioridad</label>
+          <input type="text" id="prioridad" name="prioridad" placeholder="se calcula automáticamente" readonly>
+        </div>
+
+        <div class="barra-superior">
+          <button type="submit" id="btnGuardar">Guardar</button>
+          <button type="button" id="btnVolver" class="btn-secundario">Volver al listado</button>
+        </div>
+
+      </form>
+
+      <div id="mensaje"></div>
+    </section>
+  </div>
+
+  <script src="js/ingresar.js"></script>
+</body>
+</html>

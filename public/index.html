@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de Tickets</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Listado de Tickets</h1>
+
+    <section class="card">
+      <div class="barra-superior barra-login">
+        <span id="estadoSesion" class="estado-sesion">Verificando sesión...</span>
+        <button id="btnLogin" class="btn-secundario">Iniciar sesión</button>
+        <button id="btnLogout" class="btn-peligro">Cerrar sesión</button>
+      </div>
+
+      <div class="barra-superior">
+        <button id="btnAgregar" class="btn-secundario">Agregar ticket</button>
+        <button id="btnCargar">Cargar listado</button>
+      </div>
+
+      <div id="mensaje"></div>
+
+      <div class="tabla-responsive">
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre del solicitante</th>
+              <th>Correo</th>
+              <th>Categoría</th>
+              <th>Descripción</th>
+              <th>Impacto</th>
+              <th>Urgencia</th>
+              <th>Tiempo estimado</th>
+              <th>Estado</th>
+              <th>Prioridad</th>
+              <th>Fecha de creación</th>
+            </tr>
+          </thead>
+          <tbody id="tablaTicketsBody">
+            <tr>
+              <td colspan="6">Presione "Cargar listado" para mostrar los tickets.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
