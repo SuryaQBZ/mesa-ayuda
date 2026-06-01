@@ -1,6 +1,6 @@
-# 🧠 Proyecto Mesa de ayuda
+# Proyecto Mesa de ayuda
 
-## 📌 Descripción del proyecto
+## Descripción del proyecto
 Aplicación web para la gestión de tickets de soporte técnico.  
 Permite registrar, visualizar, actualizar y eliminar solicitudes realizadas por usuarios.  
 
@@ -8,7 +8,7 @@ El sistema incluye un **algoritmo automático de priorización**, que calcula la
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Node.js  
 - Express.js  
@@ -20,7 +20,7 @@ El sistema incluye un **algoritmo automático de priorización**, que calcula la
 
 ---
 
-## ⚙️ Instalación
+## Instalación
 
 1. Clonar el repositorio:
 ```bash
@@ -46,33 +46,33 @@ CREATE DATABASE miBase;
 
 ---
 
-## ▶️ Ejecución
+## Ejecución
 
-Iniciar el servidor:
+Iniciar el servidor:  
 node src/app.js
 
-El servidor se ejecuta en:
+El servidor se ejecuta en:  
 http://localhost:3000
 
 ---
 
-## 🔌 Endpoints
+## Endpoints
 
-🔐 Autenticación
-POST /api/auth/login → Iniciar sesión  
-POST /api/auth/logout → Cerrar sesión  
-GET /api/auth/perfil → Verificar sesión activa  
+Autenticación  
+POST /api/auth/login  
+POST /api/auth/logout  
+GET /api/auth/perfil  
 
-🎫 Tickets
-GET /api/tickets → Listar tickets  
-GET /api/tickets/:id → Obtener ticket por ID  
-POST /api/tickets → Crear ticket  
-PUT /api/tickets/:id → Actualizar ticket  
-DELETE /api/tickets/:id → Eliminar ticket  
+Tickets  
+GET /api/tickets  
+GET /api/tickets/:id  
+POST /api/tickets  
+PUT /api/tickets/:id  
+DELETE /api/tickets/:id  
 
 ---
 
-## 📌 Ejemplos de uso
+## Ejemplos de uso
 
 POST /api/tickets
 Content-Type: application/json
@@ -99,7 +99,7 @@ Respuesta esperada
 
 ---
 
-## 📊 Algoritmo de prioridad (resumen)
+## Algoritmo de prioridad (resumen)
 
 La prioridad se calcula así:
 
@@ -118,7 +118,7 @@ Resultado:
 
 ---
 
-## 🔐 Seguridad (HTTPS y sesiones)
+## Seguridad (HTTPS y sesiones)
 
 El sistema utiliza express-session, lo que permite autenticación basada en cookies.
 
