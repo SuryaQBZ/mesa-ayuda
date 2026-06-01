@@ -77,7 +77,7 @@ DELETE /api/tickets/:id → Eliminar ticket
 POST /api/tickets
 Content-Type: application/json
 
-{
+{  
   "nombreSolicitante": "Juan Pérez",  
   "correo": "juan@correo.com",  
   "categoria": "red",  
@@ -88,8 +88,8 @@ Content-Type: application/json
   "estado": "pendiente"  
 }
 
-Respuesta esperada
-{
+Respuesta esperada  
+{  
   "ok": true,  
   "mensaje": "Ticket registrado correctamente.",  
   "data": {  
