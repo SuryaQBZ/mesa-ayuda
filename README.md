@@ -78,23 +78,23 @@ POST /api/tickets
 Content-Type: application/json
 
 {
-  "nombreSolicitante": "Juan Pérez",
-  "correo": "juan@correo.com",
-  "categoria": "red",
-  "descripcion": "No hay internet",
-  "impacto": "alto",
-  "urgencia": "alta",
-  "tiempoEstimado": 5,
-  "estado": "pendiente"
+  "nombreSolicitante": "Juan Pérez",  
+  "correo": "juan@correo.com",  
+  "categoria": "red",  
+  "descripcion": "No hay internet",  
+  "impacto": "alto",  
+  "urgencia": "alta",  
+  "tiempoEstimado": 5,  
+  "estado": "pendiente"  
 }
 
 Respuesta esperada
 {
-  "ok": true,
-  "mensaje": "Ticket registrado correctamente.",
-  "data": {
-    "id": 1
-  }
+  "ok": true,  
+  "mensaje": "Ticket registrado correctamente.",  
+  "data": {  
+    "id": 1  
+  }  
 }
 
 ---
