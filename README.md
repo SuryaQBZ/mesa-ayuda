@@ -74,7 +74,7 @@ DELETE /api/tickets/:id
 
 ## Ejemplos de uso
 
-POST /api/tickets
+POST /api/tickets  
 Content-Type: application/json
 
 {  
