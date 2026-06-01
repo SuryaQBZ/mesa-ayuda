@@ -13,10 +13,10 @@ El sistema incluye un **algoritmo automático de priorización**, que calcula la
 - Node.js  
 - Express.js  
 - MySQL  
-- express-session (autenticación por sesión)  
+- express-session  
 - CORS  
-- HTML5 / CSS3 / JavaScript (frontend)  
-- MySQL2 (driver para conexión a base de datos)  
+- HTML5 / CSS3 / JavaScript  
+- MySQL2  
 
 ---
 
@@ -32,7 +32,7 @@ git clone <URL_DEL_REPOSITORIO>
 npm install
 ```
 
-3. Crear archivo .env:
+3. Crear archivo .env:  
 DB_HOST=localhost  
 DB_USER=root  
 DB_PASSWORD=tu_password  
@@ -41,7 +41,7 @@ DB_PORT=3306
 
 SESSION_SECRET=clave_secreta_demo  
 
-4. Crear la base de datos en MySQL:
+4. Crear la base de datos en MySQL:  
 CREATE DATABASE miBase;
 
 ---
